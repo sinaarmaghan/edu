@@ -21,7 +21,8 @@
         <section id="hero">
             <h1>Welcome to Mohammad and Sina's EduPlatform :)</h1>
             <p>Learn from the best, at your own pace.</p>
-            <a href="#courses" class="cta">Browse Courses</a>
+            <a href="#" class="courses-link">Browse Courses</a>
+
         </section>
         <section id="courses">
             <!-- Add course cards here -->
@@ -39,3 +40,13 @@
 </body>
 </html>
 
+<script>
+  // Define the link
+  const coursesLink = "https://exampleacademy.teachable.com/";
+
+  // Apply the link to all elements with the 'courses-link' class
+  const coursesLinkElements = document.querySelectorAll('.courses-link');
+  coursesLinkElements.forEach(element => {
+    element.setAttribute('href', coursesLink);
+  });
+</script>
